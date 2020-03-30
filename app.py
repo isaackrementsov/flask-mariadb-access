@@ -29,7 +29,7 @@ def temp():
 
     # Return records with ID 20 through 30 [inclusive]
     # from the test_data table
-    query = "SELECT * FROM test_data where id >= 20 AND id <= 30"
+    query = "SELECT * FROM test_data where id BETWEEN 20 AND 30;"
 
     # Execute the query and get the resultant data
     cursor.execute(query)
